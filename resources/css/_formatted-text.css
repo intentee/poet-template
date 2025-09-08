@@ -4,30 +4,6 @@
   row-gap: var(--font-size-base);
   text-wrap: pretty;
 
-  figure {
-    display: flex;
-    flex-direction: column;
-    margin: var(--spacing-base) 0;
-    padding: 0;
-    row-gap: var(--spacing-half);
-
-    > a {
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-
-      img {
-        height: 100%;
-        width: 100%;
-      }
-    }
-
-    figcaption {
-      font-style: italic;
-      text-align: center;
-    }
-  }
-
   h1,
   h2,
   h3 {
@@ -150,7 +126,6 @@
       &::after {
         --size-overflow: calc(-1 * var(--margin-horizontal));
 
-        /* background-color: #f5f5f5; */
         background-color: lavender;
         border-radius: 20% 10px 30% 10px;
         bottom: var(--size-overflow);

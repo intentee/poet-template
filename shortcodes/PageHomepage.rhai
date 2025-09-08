@@ -7,15 +7,17 @@ fn template(context, props, content) {
         <h1 class="homepage__title">
           Poet 🪶
         </h1>
-        <h2 class="homepage__subtitle">
-          Not only build your website, but also expose it as an MCP server,
-          optimize for LLM SEO, or analyze the content with NLP.
-        </h2>
-        <div class="homepage__cta">
-          <a href={context.link_to("#example-page")} class="homepage__cta__button homepage__cta__button--primary">
-            Get Started
-          </a>
-        </div>
+          <h2 class="homepage__subtitle">
+            This is a template project to help you get started quickly with Poet. Take a look at the example structure and content to explore what you can build.
+          </h2>
+          <div class="homepage__cta">
+            <a href="https://poet.intentee.com/" class="homepage__cta__button homepage__cta__button--primary" target="_blank">
+              Read the Documentation
+            </a>
+            <a href={context.link_to("#example-page")} class="homepage__cta__button">
+              See example
+            </a>
+          </div>
       </div>
     </LayoutMinimal>
   }

@@ -10,7 +10,6 @@ fn template(context, props, content) {
     <html lang="en">
       <head>
         <link rel="canonical" href={context.reference.canonical_link}>
-        <link rel="icon" href={context.assets.file("resources/media/favicon.svg")}>
 
         <meta charset="UTF-8">
         <meta name="turbo-refresh-method" content="morph">
@@ -39,68 +38,20 @@ fn template(context, props, content) {
           <nav class="page-navigation">
             <div class="page-navigation__track">
               <a class="page-navigation__link page-navigation__link--site-name" href={context.link_to("index")}>
-                Poet 🪶
+                Your site name
               </a>
-              <div class="page-navigation__dropdowns">
-                <LayoutMinimalDropdown
-                  collection="docs"
-                  href={context.link_to("#example-page")}
-                  label="Example"
-                >
-                  <a
-                    href={context.link_to("#example-page")}
-                    class={clsx(#{
-                      "page-navigation__link": true,
-                      "page-navigation__link--dropdown": true,
-                      "active": context.belongs_to("docs"),
-                    })}
-                  >
-                    Example category
-                  </a>
-                </LayoutMinimalDropdown>
-              </div>
+              <a class="page-navigation__link" href={context.link_to("#example-page")}>
+                Example page
+              </a>
             </div>
-            <a
-              class="page-navigation__link"
-              href="https://github.com/intentee/poet"
-              target="_blank"
-            >
-              <img alt="GitHub" src={context.assets.file("resources/media/logo-github.svg")}>
-            </a>
           </nav>
           <main class="page-main">
             {content}
           </main>
           <footer class="page-footer">
             <p>
-              Made with ❤️ by <a href="https://intentee.com" target="_blank">Intentee</a> and contributors.
+              Made with ❤️ by <a href="https://intentee.com" target="_blank">Intentee</a>.
             </p>
-            <div class="page-footer__links">
-              <a
-                href="https://bsky.app/profile/intentee.bsky.social"
-                target="_blank"
-              >
-                <img alt="Bluesky" src={context.assets.file("resources/media/logo-bluesky.svg")}>
-              </a>
-              <a
-                href="https://discord.gg/92x3Z8a4gj"
-                target="_blank"
-              >
-                <img alt="Discord" src={context.assets.file("resources/media/logo-discord.svg")}>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/intentee"
-                target="_blank"
-              >
-                <img alt="LinkedIn" src={context.assets.file("resources/media/logo-linkedin.svg")}>
-              </a>
-              <a
-                href="https://x.com/intentee"
-                target="_blank"
-              >
-                <img alt="X" src={context.assets.file("resources/media/logo-x.svg")}>
-              </a>
-            </div>
           </footer>
         </div>
       </body>
