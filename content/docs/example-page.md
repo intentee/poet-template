@@ -56,7 +56,7 @@ For example, below is a Note component:
 
 And this is the code for the Note component (you will also find it in the `components/Note.rhai` file):
 
-```javascript
+```html label:"rhai"
 fn template(context, props, content) {
 
   component {
