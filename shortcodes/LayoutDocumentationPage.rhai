@@ -26,7 +26,6 @@ fn render_menu(context, node, level, nested) {
 
 fn template(context, props, content) {
   context.assets.add("resources/css/layout-documentation-page.css");
-  // context.speculation.next(context.collection("documentation_pages").hierarchy.next_after(context.basename));
 
   let menu_hierarchy = context.primary_collection.hierarchy;
 
@@ -39,7 +38,6 @@ fn template(context, props, content) {
             class="documentation-page__menu__title"
             for="documentation-page-menu-toggle"
           >{switch context.primary_collection.name {
-            // _ => error(`Collection not handled: "${context.primary_collection.name}"`),
             _ => "Menu",
           }}</label>
           <div class="documentation-page__menu__content">
