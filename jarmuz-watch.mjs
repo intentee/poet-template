@@ -6,10 +6,11 @@ jarmuz({
   once: false,
   pipeline: ["poet-watch", "tcm", "tsc", "esbuild-development"],
   watch: ["resources", "src"],
-}).decide(function ({ matches, schedule }) {
-  schedule("poet-watch");
-
+}).decide(function ({ initial, matches, schedule }) {
   switch (true) {
+    case initial:
+      schedule("poet-watch");
+      return;
     case matches("resources/**/*.{ts,tsx}"):
       schedule("tsc");
       break;
