@@ -12,8 +12,6 @@ fn template(context, props, content) {
         <link rel="canonical" href={context.reference.canonical_link}>
 
         <meta charset="UTF-8">
-        <meta name="turbo-refresh-method" content="morph">
-        <meta name="turbo-refresh-scroll" content="preserve">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         {if !context.front_matter.description.is_empty() {
@@ -38,20 +36,35 @@ fn template(context, props, content) {
           <nav class="page-navigation">
             <div class="page-navigation__track">
               <a class="page-navigation__link page-navigation__link--site-name" href={context.link_to("index")}>
-                Your site name
+                Your Page Name
               </a>
               <a class="page-navigation__link" href={context.link_to("#example-page")}>
-                Example page
+                See examples
               </a>
             </div>
+            <a
+              class="page-navigation__link"
+              href="https://github.com/intentee/poet"
+              target="_blank"
+            >
+              <img alt="GitHub" src={context.assets.file("resources/media/logo-github.svg")}>
+            </a>
           </nav>
           <main class="page-main">
             {content}
           </main>
           <footer class="page-footer">
             <p>
-              Made with ❤️ by <a href="https://intentee.com" target="_blank">Intentee</a>.
+              Powered by <a href="https://github.com/intentee/poet" target="_blank">Poet</a>
             </p>
+            <div class="page-footer__links">
+              <a
+                href="https://github.com/intentee/poet"
+                target="_blank"
+              >
+                <img alt="GitHub" src={context.assets.file("resources/media/logo-github.svg")}>
+              </a>
+            </div>
           </footer>
         </div>
       </body>

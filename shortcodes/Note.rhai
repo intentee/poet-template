@@ -1,5 +1,4 @@
 fn template(context, props, content) {
-
   component {
     <div
       class={if "type" in props {

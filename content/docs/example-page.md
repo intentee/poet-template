@@ -4,7 +4,6 @@ layout = "LayoutDocumentationPage"
 title = "Example page"
 
 [[collection]]
-after = "docs/what-is-poet"
 name = "docs"
 parent = "docs/index"
 +++
