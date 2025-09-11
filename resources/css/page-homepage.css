@@ -26,7 +26,7 @@
 }
 
 .homepage__cta__button {
-  border-radius: 20px 30%;
+  border-radius: 5px;
   border: 2px solid var(--color-border);
   display: inline-flex;
   padding: var(--spacing-half) var(--spacing-base);
@@ -41,10 +41,6 @@
 .homepage__title {
   font-weight: bold;
   line-height: 1;
-  text-shadow:
-    5px 0 0 #ffff0022,
-    10px 0 0 #ff000022,
-    15px 0 0 #0000ff22;
 
   @media (max-width: 900px) {
     font-size: 80px;

@@ -138,16 +138,11 @@
   .documentation-page__menu__link {
     border: 2px solid transparent;
     padding: var(--spacing-half) var(--spacing-base);
-    text-decoration: none;
+    text-decoration-style: none;
   }
 
   .documentation-page__menu__link.documentation-page__menu__link--active {
-    background-color: var(--color-highlight);
-    border-radius: 20px 30%;
-    box-shadow:
-      2px 2px 0 #ffff0022,
-      4px 4px 0 #ff000022,
-      6px 6px 0 #0000ff22;
+    text-decoration-style: underline;
   }
 
   .documentation-page__menu__section {
