@@ -1,6 +1,6 @@
 {
   "license": "Apache-2.0",
-  "name": "poet-template",
+  "name": "poet",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/intentee/poet.git"
@@ -8,6 +8,7 @@
   "type": "module",
   "version": "0.1.0",
   "devDependencies": {
+    "@types/hotwired__turbo": "^8.0.4",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "esbuild": "^0.25.9",
@@ -28,6 +29,8 @@
     "typescript-eslint": "^8.40.0"
   },
   "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo": "^8.0.13",
     "clsx": "^2.1.1",
     "idiomorph": "^0.7.3",
     "js-toml": "^1.0.2",
