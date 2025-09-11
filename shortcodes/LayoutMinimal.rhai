@@ -13,12 +13,11 @@ fn template(context, props, content) {
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        {if !context.front_matter.description.is_empty() {
-          component {
-            <meta name="description" content={context.front_matter.description}>
-          }
-        }}
+        <meta name="description" content={if context.front_matter.description.is_empty() {
+          "Open-source static site generator. Build websites, expose them as MCP servers, optimize for LLM SEO, and analyze content with NLP."
+        } else {
+          context.front_matter.description
+        }}>
 
         <title>{
           let base_title = "Poet";
