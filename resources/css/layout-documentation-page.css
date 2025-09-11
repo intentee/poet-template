@@ -138,11 +138,11 @@
   .documentation-page__menu__link {
     border: 2px solid transparent;
     padding: var(--spacing-half) var(--spacing-base);
-    text-decoration-style: none;
+    text-decoration-line: none;
   }
 
   .documentation-page__menu__link.documentation-page__menu__link--active {
-    text-decoration-style: underline;
+    text-decoration-line: underline;
   }
 
   .documentation-page__menu__section {
